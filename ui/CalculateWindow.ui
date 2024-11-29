@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalculatorWindow</class>
+ <widget class="QMainWindow" name="CalculatorWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #f0f0f0; /* Светлый фон */
+    font-family: Arial, sans-serif; /* Шрифт */
+    font-size: 14px; /* Размер шрифта */
+    color: #333; /* Цвет текста */
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QWidget" name="widget_4" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QWidget" name="widget_label" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial,sans-serif</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    color: #555; /* Цвет текста лейблов */
+    font-weight: bold; /* Жирный текст */
+    padding: 5px; /* Отступы */
+}</string>
+            </property>
+            <property name="text">
+             <string>Стоимость недвижимотсти</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial,sans-serif</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    color: #555; /* Цвет текста лейблов */
+    font-weight: bold; /* Жирный текст */
+    padding: 5px; /* Отступы */
+}</string>
+            </property>
+            <property name="text">
+             <string>Первоначальный взнос</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial,sans-serif</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    color: #555; /* Цвет текста лейблов */
+    font-weight: bold; /* Жирный текст */
+    padding: 5px; /* Отступы */
+}</string>
+            </property>
+            <property name="text">
+             <string>Сумма кредита</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial,sans-serif</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    color: #555; /* Цвет текста лейблов */
+    font-weight: bold; /* Жирный текст */
+    padding: 5px; /* Отступы */
+}</string>
+            </property>
+            <property name="text">
+             <string>Срок кредита / лет</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial,sans-serif</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    color: #555; /* Цвет текста лейблов */
+    font-weight: bold; /* Жирный текст */
+    padding: 5px; /* Отступы */
+}</string>
+            </property>
+            <property name="text">
+             <string>Процентная ставка</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial,sans-serif</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    color: #555; /* Цвет текста лейблов */
+    font-weight: bold; /* Жирный текст */
+    padding: 5px; /* Отступы */
+}</string>
+            </property>
+            <property name="text">
+             <string>Тип ежемесячных платежей</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_edit" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLineEdit" name="price">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: #fff; /* Белый фон */
+    border: 1px solid #ccc; /* Цвет рамки */
+    border-radius: 5px; /* Скругление углов */
+    padding: 5px; /* Отступы внутри поля */
+}</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="first_deposit">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: #fff; /* Белый фон */
+    border: 1px solid #ccc; /* Цвет рамки */
+    border-radius: 5px; /* Скругление углов */
+    padding: 5px; /* Отступы внутри поля */
+}</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_loan_amount">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    color: #555; /* Цвет текста лейблов */
+    font-weight: bold; /* Жирный текст */
+    padding: 5px; /* Отступы */
+}</string>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="term">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: #fff; /* Белый фон */
+    border: 1px solid #ccc; /* Цвет рамки */
+    border-radius: 5px; /* Скругление углов */
+    padding: 5px; /* Отступы внутри поля */
+}</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="interest_rate">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: #fff; /* Белый фон */
+    border: 1px solid #ccc; /* Цвет рамки */
+    border-radius: 5px; /* Скругление углов */
+    padding: 5px; /* Отступы внутри поля */
+}</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListView" name="list_type">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListView {
+    background-color: #fff; /* Белый фон */
+    border: 1px solid #ccc; /* Цвет рамки */
+    border-radius: 5px; /* Скругление углов */
+}
+
+/* Стиль для элементов списка */
+QListView::item {
+    padding: 10px; /* Отступы внутри элемента списка */
+    border-bottom: 1px solid #eee; /* Разделительная линия между элементами */
+}
+
+/* Стиль для выбранного элемента */
+QListView::item:selected {
+    background-color: #4CAF50; /* Цвет выбранного элемента */
+    color: white; /* Цвет текста выбранного элемента */
+}
+
+/* Стиль для элементов при наведении */
+QListView::item:hover {
+    background-color: #e0e0e0; /* Цвет при наведении на элемент */
+}</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_button" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QPushButton" name="CalculateButton">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>170</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial,sans-serif</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Зеленый фон */
+    color: white; /* Цвет текста */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Скругление углов */
+    padding: 10px; /* Отступы */
+    font-size: 16px; /* Размер шрифта */
+}
+QPushButton:hover {
+    background-color: #45a049; /* Цвет при наведении */
+}</string>
+         </property>
+         <property name="text">
+          <string>Рассчитать</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
